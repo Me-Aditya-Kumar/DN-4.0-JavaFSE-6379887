@@ -1,0 +1,18 @@
+What is Big O Notation?
+Big O Notation describes the upper bound of an algorithm’s running time. It helps us understand how an algorithm 
+scales with input size n.
+
+Notation	Meaning	Example
+
+O(1)	  : Constant time	Accessing array[i]
+O(n)	  : Linear time	Linear search
+O(log n)  : Logarithmic time	Binary search
+O(n²)	  : Quadratic time	Bubble sort
+
+Best, Average, and Worst Case
+
+Case	    Linear Search	    Binary Search (sorted array)
+
+Best	    O(1) (first item)	O(1) (middle item)
+Average	    O(n/2) → O(n)	    O(log n)
+Worst	    O(n)	            O(log n)

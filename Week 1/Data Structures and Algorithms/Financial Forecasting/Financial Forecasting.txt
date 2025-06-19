@@ -1,0 +1,3 @@
+Recursion is a programming technique where a method calls itself to solve smaller sub problems of the original problem.
+It's useful for problems that can be broken into repetitive substructures, such as computing factorial, Fibonacci numbers, 
+or predicting compound values over time.
