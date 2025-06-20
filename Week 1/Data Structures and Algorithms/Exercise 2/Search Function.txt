@@ -1,0 +1,30 @@
+Understand Asymptotic Notation:
+
+What is Big O Notation?
+    Big O Notation describes the upper bound of an algorithm’s running time. It helps us understand how an algorithm 
+    scales with input size n.
+
+Notation	Meaning	Example
+O(1)	  : Constant time	Accessing array[i]
+O(n)	  : Linear time	Linear search
+O(log n)  : Logarithmic time	Binary search
+O(n²)	  : Quadratic time	Bubble sort
+
+Best, Average, and Worst Case
+
+Case	    Linear Search	    Binary Search (sorted array)
+Best	    O(1) (first item)	O(1) (middle item)
+Average	    O(n/2) → O(n)	    O(log n)
+Worst	    O(n)	            O(log n)
+
+Analysis:
+
+Algorithm	    Time Complexity	    Suitable For
+Linear Search	O(n)	            Small datasets, unsorted data
+Binary Search	O(log n)	        Large datasets, sorted data
+
+
+Binary Search is much faster for large datasets, but it requires sorting, which adds a one-time cost of O(n log n).
+Linear Search is good for short lists or when data isn’t sorted.
+For an e-commerce platform, where fast searching is essential, and data is typically sorted or indexed — Binary Search 
+(or even better, a HashMap or Search Tree) is preferred.

@@ -1,0 +1,26 @@
+Understand Array Representation
+
+How Arrays Are Represented in Memory:
+    Arrays are stored contiguously in memory.
+    Each element is accessed using an index, starting from 0.
+    The address of any element can be found using: address = base_address + index * size_of_element
+
+Advantages of Arrays:
+    Fast access (O(1) time) to any element using an index.
+    Memory-efficient for fixed-size data collections.
+    Easy to implement for small, known-size datasets.
+
+Analysis:
+
+Operation	    Time Complexity	    Explanation
+Add	            O(1)	            Adds at the end of the array
+Search	        O(n)	            Linear search through the array
+Traverse	    O(n)	            Visit each employee once
+Delete	        O(n)	            Shifts elements after deletion
+
+Limitations of Arrays
+    Fixed Size: 
+        You must define the size at the start.
+        Cannot grow dynamically.
+    Complex Deletion/Insertion:
+        Requires shifting elements, which is O(n).

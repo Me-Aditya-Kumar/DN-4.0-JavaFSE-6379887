@@ -1,0 +1,26 @@
+Understand Search Algorithms:
+
+Linear Search:
+    Scans each element one by one.
+    Best when the list is unsorted or small.
+    Time Complexity:
+        Best: O(1), Average: O(n), Worst: O(n)
+
+Binary Search:
+    Works only on sorted lists.
+    Repeatedly divides the list and compares.
+    Best for large, sorted datasets.
+    Time Complexity:
+        Best: O(1), Average/Worst: O(log n)
+
+Analysis:
+Algorithm	    Time        Complexity	Suitable When...
+Linear Search	O(n)	    List is unsorted or very small
+Binary Search	O(log n)	List is large and sorted
+
+Use Linear Search when:
+    You don't have time to sort.
+    Data is small and updated frequently.
+Use Binary Search when:
+    You can keep the list sorted.
+    Performance is important for large data.

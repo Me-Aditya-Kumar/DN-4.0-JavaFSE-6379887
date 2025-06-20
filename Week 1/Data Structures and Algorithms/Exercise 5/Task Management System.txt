@@ -1,0 +1,25 @@
+Understand Linked Lists
+
+Types of Linked Lists:
+    Singly Linked List
+        Each node points to the next node.
+        One-way traversal.
+        Simple and memory-efficient.
+    Doubly Linked List
+        Each node points to both next and previous nodes.
+        Allows two-way traversal, easier deletion from both ends.
+
+Analysis:
+
+Operation	    Time Complexity	    Explanation
+Add	            O(n)	            Traverses to the end to add
+Search	        O(n)	            Linear scan to match task ID
+Traverse	    O(n)	            Visit every node
+Delete	        O(n)	            Find and unlink the node
+
+Advantages of Linked Lists over Arrays:
+Feature	        Arrays	            Linked Lists
+Size	        Fixed	            Dynamic
+Insert/Delete	Complex (O(n))	    Efficient (O(1) if position known)
+Memory	        May waste space	    Allocates as needed
+Random Access	O(1) using index	O(n) (no index)
