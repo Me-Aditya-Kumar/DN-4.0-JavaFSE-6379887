@@ -20,7 +20,6 @@ class Book {
 
 public class LibraryManagementSystem {
 
-    // Linear search by title
     public static Book linearSearch(Book[] books, String title) {
         for (Book b : books) {
             if (b.title.equalsIgnoreCase(title)) {
@@ -30,7 +29,6 @@ public class LibraryManagementSystem {
         return null;
     }
 
-    // Binary search by title (assumes sorted array)
     public static Book binarySearch(Book[] books, String title) {
         int left = 0, right = books.length - 1;
 
@@ -46,7 +44,6 @@ public class LibraryManagementSystem {
         return null;
     }
 
-    // Display all books
     public static void displayBooks(Book[] books) {
         for (Book b : books) {
             b.displayBook();
@@ -64,32 +61,30 @@ public class LibraryManagementSystem {
             new Book(105, "To Kill a Mockingbird", "Harper Lee")
         };
 
-        System.out.println("📚 Library Book List:");
+        System.out.println(" Library Book List:");
         displayBooks(books);
 
         // Linear Search
-        System.out.print("\n🔍 Linear Search - Enter title to search: ");
+        System.out.print("\n Linear Search - Enter title to search: ");
         String title = sc.nextLine();
         Book found = linearSearch(books, title);
         if (found != null) {
-            System.out.println("✅ Book Found:");
+            System.out.println(" Book Found:");
             found.displayBook();
         } else {
-            System.out.println("❌ Book not found.");
+            System.out.println(" Book not found.");
         }
 
-        // Binary Search
-        // Sort array by title before binary search
         Arrays.sort(books, Comparator.comparing(b -> b.title.toLowerCase()));
 
         System.out.print("\n🔍 Binary Search - Enter title to search: ");
         title = sc.nextLine();
         found = binarySearch(books, title);
         if (found != null) {
-            System.out.println("✅ Book Found:");
+            System.out.println(" Book Found:");
             found.displayBook();
         } else {
-            System.out.println("❌ Book not found.");
+            System.out.println(" Book not found.");
         }
 
         sc.close();

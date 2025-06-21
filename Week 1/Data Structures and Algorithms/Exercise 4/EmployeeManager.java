@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class EmployeeManager {
     static final int MAX = 100;
     static Employee[] employees = new Employee[MAX];
@@ -13,7 +12,6 @@ public class EmployeeManager {
             System.out.println("Employee list is full.");
         }
     }
-
     public static void searchEmployee(int id) {
         for (int i = 0; i < count; i++) {
             if (employees[i].employeeId == id) {
