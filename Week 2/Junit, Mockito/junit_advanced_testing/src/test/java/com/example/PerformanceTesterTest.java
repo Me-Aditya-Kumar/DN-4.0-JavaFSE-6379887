@@ -18,8 +18,6 @@ public class PerformanceTesterTest {
 
     @Test
     public void testFailsIfTaskTooSlow() {
-        PerformanceTester tester = new PerformanceTester();
-
         assertTimeoutPreemptively(Duration.ofMillis(300), () -> {
     new PerformanceTester().performTask();
 });
