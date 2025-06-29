@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: com.example.PerformanceTesterTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.82 s <<< FAILURE! - in com.example.PerformanceTesterTest
+com.example.PerformanceTesterTest.testFailsIfTaskTooSlow  Time elapsed: 0.313 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: execution timed out after 300 ms
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertTimeoutPreemptively.createAssertionFailure(AssertTimeoutPreemptively.java:132)
+	at org.junit.jupiter.api.AssertTimeoutPreemptively.resolveFutureAndHandleException(AssertTimeoutPreemptively.java:116)
+	at org.junit.jupiter.api.AssertTimeoutPreemptively.assertTimeoutPreemptively(AssertTimeoutPreemptively.java:82)
+	at org.junit.jupiter.api.AssertTimeoutPreemptively.assertTimeoutPreemptively(AssertTimeoutPreemptively.java:65)
+	at org.junit.jupiter.api.AssertTimeoutPreemptively.assertTimeoutPreemptively(AssertTimeoutPreemptively.java:47)
+	at org.junit.jupiter.api.AssertTimeoutPreemptively.assertTimeoutPreemptively(AssertTimeoutPreemptively.java:43)
+	at org.junit.jupiter.api.Assertions.assertTimeoutPreemptively(Assertions.java:3427)
+	at com.example.PerformanceTesterTest.testFailsIfTaskTooSlow(PerformanceTesterTest.java:23)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: org.junit.jupiter.api.AssertTimeoutPreemptively$ExecutionTimeoutException: Execution timed out in thread junit-timeout-thread-1
+	at java.base/java.lang.Thread.sleepNanos0(Native Method)
+	at java.base/java.lang.Thread.sleepNanos(Thread.java:482)
+	at java.base/java.lang.Thread.sleep(Thread.java:513)
+	at com.example.PerformanceTester.performTask(PerformanceTester.java:6)
+	at com.example.PerformanceTesterTest.lambda$1(PerformanceTesterTest.java:24)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+
