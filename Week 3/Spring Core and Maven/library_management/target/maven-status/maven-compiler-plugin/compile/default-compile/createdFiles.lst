@@ -1,0 +1,5 @@
+com\example\aspect\LoggingAspect.class
+com\example\LibraryManagementApplication.class
+com\example\Main.class
+com\example\repository\BookRepository.class
+com\example\service\BookService.class
