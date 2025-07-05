@@ -1,4 +1,18 @@
 {
     "java.configuration.updateBuildConfiguration": "interactive",
-    "java.compile.nullAnalysis.mode": "automatic"
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.project.sourcePaths": [
+        "Week 1/Design Principles and Patterns/Exercise 9",
+        "Week 1/Design Principles and Patterns/Exercise 8",
+        "Week 1/Design Principles and Patterns/Exercise 7",
+        "Week 1/Design Principles and Patterns/Exercise 6",
+        "Week 1/Design Principles and Patterns/Exercise 5",
+        "Week 1/Design Principles and Patterns/Exercise 4",
+        "Week 1/Design Principles and Patterns/Exercise 3",
+        "Week 1/Design Principles and Patterns/Exercise 2",
+        "Week 1/Design Principles and Patterns/Exercise 11",
+        "Week 1/Design Principles and Patterns/Exercise 10",
+        "Week 1/Design Principles and Patterns/Exercise 1",
+        "Week 3/Spring Data JPA with Hibernate/orm-learn/src/main/java/com/cognizant/orm_learn"
+    ]
 }
