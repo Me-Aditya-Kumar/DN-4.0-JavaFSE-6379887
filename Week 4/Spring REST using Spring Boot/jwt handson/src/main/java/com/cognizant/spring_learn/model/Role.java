@@ -12,5 +12,10 @@ public class Role {
 
     private String name;
 
+    public String getName() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getName'");
+    }
+
     // Getters and setters
 }
