@@ -1,0 +1,43 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: example_route
+          uri: http://example.org
+          predicates:
+            - Path=/example/**
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: load_balanced_route
+          uri: lb://example-service
+          predicates:
+            - Path=/loadbalanced/**
+resilience4j:
+  circuitbreaker:
+    instances:
+      exampleCircuitBreaker:
+        registerHealthIndicator: true
+        slidingWindowSize: 10
+        failureRateThreshold: 50
+        waitDurationInOpenState: 10s
+        permittedNumberOfCallsInHalfOpenState: 2
+        minimumNumberOfCalls: 5
+        eventConsumerBufferSize: 10
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: resilient_route
+          uri: http://localhost:8081 # or your target backend
+          predicates:
+            - Path=/resilient/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: exampleCircuitBreaker
+                fallbackUri: forward:/fallback
