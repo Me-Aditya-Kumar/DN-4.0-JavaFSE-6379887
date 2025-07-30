@@ -1,4 +1,4 @@
-package com.cognizant.discoveryserver;
+package com.cognizant.eureka_discovery_server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

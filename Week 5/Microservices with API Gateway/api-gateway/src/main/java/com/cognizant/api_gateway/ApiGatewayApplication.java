@@ -1,9 +1,9 @@
-package com.cognizant.apigateway;
+package com.cognizant.api_gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import com.cognizant.apigateway.filter.AuthFilter;
+import com.cognizant.api_gateway.filter.AuthFilter;
 
 @SpringBootApplication
 public class ApiGatewayApplication {

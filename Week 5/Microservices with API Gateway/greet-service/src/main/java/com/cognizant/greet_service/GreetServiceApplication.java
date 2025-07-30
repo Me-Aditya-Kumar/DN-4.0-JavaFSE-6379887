@@ -1,4 +1,4 @@
-package com.cognizant.greetservice;
+package com.cognizant.greet_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
